@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background: #333;
+        }
+        .box{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: myanimation;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            /* with animation-iteration-count: it should go around twice. with infinite value it will just keep going */
+            animation-delay: 500ms;
+            /* animation-direction: reverse; */
+            /* it will in the other way */
+            /* animation-direction: alternate; */
+            /* it will first go in way, after the round it will go in the other way */
+            animation-timing-function: linear;
+            /* same as transition */
+            animation-fill-mode: forwards;
+            /* with animation fill mode forword it will keep the shape of the last animation */
+
+        }
+        /* @keyframes myanimation{
+            0%{background-color: white; left: 0px; top: 0px; border-radius: 0% 0% 0% 0%;}
+            25%{background-color: peru; left: 300px; top: 0px; border-radius: 50% 0% 0% 0%;}
+            50%{background-color: rebeccapurple; left: 300px; top: 300px; border-radius: 50% 50% 0% 0%;}
+            75%{background-color: skyblue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0%;}
+            100%{background-color: white; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+        } */
+        @keyframes myanimation{
+            0%{background-color: white;  border-radius: 0% 0% 0% 0%;}
+            25%{background-color: peru;  border-radius: 50% 0% 0% 0%;}
+            50%{background-color: rebeccapurple;  border-radius: 50% 50% 0% 0%;}
+            75%{background-color: skyblue; border-radius: 50% 50% 50% 0%;}
+            100%{background-color: white; border-radius: 50% 50% 50% 50%;}
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

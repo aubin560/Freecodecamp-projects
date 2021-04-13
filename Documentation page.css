@@ -1,0 +1,38 @@
+.main-container{
+    display: flex;
+    position: relative;
+    
+}
+table{
+    border-collapse: collapse;
+    height: 100vh;
+    
+}
+td,th{
+    border: solid black 1px;
+    padding: 10px;   
+}
+#main-doc{
+    order: 2;
+    padding: 10px;
+}
+
+#container{
+   border: solid white 1px;
+   background-color: white;
+   width: 330px; 
+   height: 650px;
+   overflow-y: scroll;
+   position: sticky;
+   top: 0;
+}
+#navbar{
+    order: 1;
+    cursor: pointer;    
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+/* thanks to display: block; I am able to make all cells areas as links, thank you Fcc */

@@ -1,0 +1,58 @@
+<html>
+    <style>
+        #container>*{
+            background: rebeccapurple;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            
+        }
+        #container{
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,1f);
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 10px;
+            grid-template-areas: 
+            "header header header header"
+            "header header header header"
+            "nav nav section section"
+            /* "aside aside section section" */
+            "aside aside  main main"
+            "footer footer footer footer"
+            
+            
+            
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        main{
+            grid-area: main;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        
+
+    </style>
+    <div id="container">
+        <header>Header</header>    
+        <nav>Nav</nav>
+        <section>Section</section>
+        <main>Main</main>
+        <aside>Aside</aside>
+        
+        <footer>Footer</footer>
+    </div>
+</html>

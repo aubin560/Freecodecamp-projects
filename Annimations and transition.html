@@ -1,0 +1,46 @@
+<html>
+    <!-- trasitions enable to the transition between two states of an element -->
+    <!-- transition-property help to specify where the transitions will be applied. it can be on width, height, background-color,... 
+    without the transition-property css will transit everything or by assigning the value of all on the transition property -->
+    <!-- transform property really interesting -->
+    <style>
+        body{
+            margin: 100px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background: rebeccapurple;
+            /* transition-duration: 3000ms;
+            transition-property: background, transform;
+            transition-timing-function: ease-in-out;
+            transition-delay: 500ms; */
+            transition: 1s background ease-in, 500ms transform ease-out 1s ;
+        }
+        .box:hover{
+            background: peru;
+            transform: rotate(45deg);
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 50px;
+            background: peru;
+            transition-property: background, border-radius, transform;
+            transition-duration: 1s, 3s;
+            transition-timing-function: ease-in
+            
+        }
+        .box2:hover{
+            background: rebeccapurple;
+            border-radius: 50%;
+            transform: rotateY(180deg);
+            
+        }
+
+    </style>
+    <div class="box"></div>
+    <div class="box2"></div>
+    
+</html>

@@ -1,0 +1,100 @@
+body {
+    background-color: #cccccc;
+  }
+  .page {
+    margin: 0 5%;
+  }
+  p {
+    font-family: Lato;
+  }
+  h1,
+  h2,
+  .list-year {
+    font-family: Playfair Display;
+    color: black;
+  }
+  .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 80%;
+  }
+  .noshow {
+    display: none;
+  }
+  .subsection {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 0px 15px;
+  }
+  .link,
+  #target1,
+  #target3 {
+    margin: auto;
+    width: 200px;
+  }
+  #target3 a {
+    text-decoration: none;
+  }
+  .list-items {
+    max-width: 800px;
+    margin: 15px auto;
+  }
+  td {
+    padding: 0px 10px;
+  }
+  .list-year {
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+  }
+  .deets {
+    text-align: left;
+    border-left: 1px solid #cccccc;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .page {
+      margin: 0px;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .list-year {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: normal;
+    }
+    .deets {
+      padding: 3px 10px;
+    }
+  }
+  <html>
+  <link href="tribute@page.css" rel="stylesheet"> 
+
+<main id="main">
+  
+  <div class="main-title"> PATRICE H. LUMUMBA</div>
+  <p>The man who fought for the Independence of Democratic Republic of Congo</p>
+  <div id="img-div">
+      <figure>
+      <img id="image" src="patrice_lumumba_offical_portrait_0.jpg" width="380px" height="380px" alt="Picture of P.E Lumumba">
+      <caption id="img-caption">Patrice E. LUMUMBA in his office</caption>
+      </figure>
+
+  </div>
+  <div id="tribute-info">
+          <p class="prov-Lumumba">History will one day have its say, but it will not be the history that Brussels, Paris, Wanshington, 
+          or United Nations will teah but that which they will teach,
+          in the countries emacipated from colonialism and its puppets... a history of Glory and Dignity</p>
+          <p class="year">Patrice Lumumba, Oct. 1960</p>
+          <p class="short-info-lum">Patrice Lumumba, in full Patrice Hemery Lumumba, (born July 2, 1925, Onalua, Belgian Congo [now Democratic Republic of the Congo]
+              —died January &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 17, 1961, Katanga province), African nationalist leader, the first prime minister of the Democratic Republic of the Congo
+               (June–September 1960). &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspForced out of office during a political crisis, he was assassinated a short time later.</p>
+  </div>
+
+  <a href="Additional Information.html" target="_blank">More about Patrice E. LUMUMBA's Achievement</a>
+   
+</main>
+</html>  

@@ -1,0 +1,253 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+h2{
+    font-family: Georgia®;
+}
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: rgb(46, 43, 43);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 150px;
+    align-items: center;
+    z-index: 100;
+}
+#image-container{
+    height: 150px;
+    
+}
+#image{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGwisNBIirjpDEDRhTgPapj-W7KsyejwN0iA&usqp=CAU);
+    height: 100%; 
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+.c-name{
+    text-align: center;
+    color: white;
+    font-family: Lobster;
+    font-size: 40px;
+}
+.nav-link{
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-family:Nanum Myeongjo;
+}
+.list1{
+    list-style: none;
+    display: inline;
+    margin-right: 100px;
+}
+iframe{
+    width: 560px; 
+    height: 315px;
+}
+.submit{
+    text-align: center;
+    padding:20px
+}
+input{
+    padding: 7px;
+}
+.email{
+    width: 250px;
+}
+.sub{
+    width: 150px;
+}
+.container1>*{
+    background: teal;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.container1{
+    width: 80%;
+    margin: 0 auto;
+    z-index: 99;
+    position: relative;
+    top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(300px,auto);
+    grid-template-areas: 
+    "section section section section"
+    "main main main main"
+    "nav1 nav1 aside1 aside1"
+    "nav2 nav2 aside2 aside2"
+    "nav3 nav3 aside3 aside3"
+    "footer footer footer footer";
+    /* align-items: center; */
+}
+section{
+    grid-area: section;
+}
+main{
+    grid-area: main;
+}
+#nav1{
+    grid-area: nav1;
+}
+#nav2{
+    grid-area: nav2;
+}
+#nav3{
+    grid-area: nav3;
+}
+#aside1{
+    grid-area: aside1;
+}
+#aside2{
+    grid-area: aside2;
+}
+#aside3{
+    grid-area: aside3;
+}
+footer{
+    grid-area: footer;
+}
+img{
+    width: 400px;
+    height: 210px;
+}
+.container2{
+    border: black solid 1px;
+    padding: 10px 10px 10px 10px;
+}
+.car-name{
+    background-color: rgb(46, 43, 43);
+    font-family: Nanum Myeongjo;
+    padding: 10px;
+    font-size: 18px;
+    border: solid black 1px;
+}
+.button{
+    background-color: rgb(46, 43, 43);
+    font-family: Nanum Myeongjo;
+    color: white;
+    cursor: pointer;
+}
+
+.list{
+    list-style: none;
+    padding: 2px 5px 2px 5px ;
+}
+@media(max-width:1500px){
+     .list1{
+         margin-right: 50px;
+}
+img{
+    width: 400px;
+    height: 210px;
+}
+}
+@media(max-width:1300px){
+    
+     .list1{
+         margin-right: 10px;
+     }
+    
+     img{
+        width: 250px;
+        height: 210px;
+    } 
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+    
+}
+@media(max-width:760px){
+    .header{
+       display: grid;
+       grid-template-columns: 1fr 2fr 2fr;
+       grid-template-rows: 50px 50px;
+       grid-template-areas: 
+       "image c-name c-name"
+       "image nav-bar nav-bar";
+        }
+        #image{
+            grid-area: image;
+        }
+        .c-name{
+            grid-area: c-name;
+            
+        }
+        #nav-bar{
+            grid-area: nav-bar;
+            margin: 0 auto;
+        }
+        
+    .container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr;
+        grid-template-areas: 
+        "section"
+        "main"
+        "nav1"
+        "aside1"
+        "nav2"
+        "aside2"
+        "nav3"
+        "aside3"
+        "footer";
+        align-items: center;
+        grid-gap: .2rem;
+    }
+    }
+    @media(max-width:570px){
+        .container1{
+            width: 300px;
+            position: relative;
+            left: -28px;
+        }
+        iframe{
+            width: 280px;
+            height: 250px;
+        }
+    }
+    @media (max-width: 412px){
+    .c-name{
+        text-align:center;
+        font-size: 25px;
+        
+    }
+    .container1{
+        position: relative;
+        left: -40px;
+    }
+    .nav-link{
+        padding: 3px;
+        margin-right:0px;
+        display: inline;
+    }
+    .container1{
+        margin: 0 auto;
+        position: relative;
+        left: -28px;
+    }
+}
+@media (max-width: 320px){
+    .nav-link{
+        padding: auto;
+        border-style: none;
+    }
+    .container1{
+        width: 200px;
+        justify-content: center;
+
+    }
+}
+
